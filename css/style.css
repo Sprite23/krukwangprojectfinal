@@ -1,0 +1,543 @@
+:root {
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+    --white: #afafaf;
+    --red: #e31b23;
+    --bodyColor: #292a2b;
+    --borderFormEls: hsl(0, 0%, 10%);
+    --bgFormEls: hsl(0, 0%, 14%);
+    --bgFormElsFocus: hsl(0, 7%, 20%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    margin: 0% !important;
+    background-color: #181818 !important;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#section1 {
+    background-color: #181818;
+    position: relative;
+    height: 100vh;
+    z-index: -999;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+#section2 {
+    background-color: #181818;
+    position: relative;
+    height: 100vh;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+#section3 {
+    background-color: #181818;
+    position: relative;
+    height: 100vh;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+#section4 {
+    background-color: #181818;
+    position: relative;
+    height: 100vh;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+#section5 {
+    background-color: #181818;
+    position: relative;
+    height: 130vh;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+#section6 {
+    background-color: #181818;
+    position: relative;
+    height: 100vh;
+    margin-top: 0px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.logo {
+    z-index: 999999;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+@keyframes logorotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes logorotate2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 6em;
+    animation-name: logorotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-text-stroke: 0.5px white;
+    color: white;
+    filter: drop-shadow(5px 5px 0px #00ff47);
+    font-family: 'Kaisei Decol', serif;
+    mix-blend-mode: difference;
+}
+
+.portfolio {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    font-size: 10em;
+    animation-name: logorotate2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+    filter: drop-shadow(5px 5px 0px #00ff47);
+    z-index: 999999999999;
+    font-family: 'Kaisei Decol', serif;
+    mix-blend-mode: difference;
+}
+
+.imageaftertext {
+    z-index: 0;
+    margin-top: 5%;
+    margin-left: 5%;
+    position: relative;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #3E5151);
+}
+
+.imageaftertext2 {
+    z-index: 0;
+    top: 5%;
+    right: 0%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext2:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #E5BF75);
+}
+
+.imageaftertext3 {
+    z-index: 0;
+    top: 37%;
+    left: 25%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext3:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #3A1916);
+}
+
+.imageaftertext4 {
+    z-index: 0;
+    top: 12%;
+    left: 42%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext4:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #584525);
+}
+
+.imageaftertext5 {
+    z-index: 0;
+    top: 40%;
+    left: 65%;
+    position: absolute;
+    width: 30%;
+    filter: saturate(0%);
+}
+
+.imageaftertext5:hover {
+    filter: saturate(100%);
+    filter: drop-shadow(5px 5px 20px #B66655);
+}
+
+.head h1 {
+    color: white;
+    font-family: 'Kaisei Decol', serif;
+    letter-spacing: 20px;
+    font-size: 5em;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee__inner {
+    display: flex;
+}
+
+.marquee h1 {
+    padding-right: 30px;
+    white-space: nowrap;
+    animation: kf-marquee 60s linear infinite;
+    text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+    font-size: 5em;
+    transition: color 0.3s linear;
+    -webkit-text-stroke: 1px#fff;
+    -webkit-text-stroke-width: 1px;
+    font-family: 'Kosugi', sans-serif;
+    opacity: 1;
+}
+
+@keyframes kf-marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.headertitle {
+    margin-top: 0%;
+    color: white;
+}
+
+.headertitle h1 {
+    color: #00ff47;
+    font-size: 10em;
+    font-weight: bolder;
+    font-family: 'Chonburi', cursive;
+    font-style: italic;
+    letter-spacing: 0.2em;
+}
+
+.headertitle h3 {
+    line-height: 2em;
+    letter-spacing: 0.3em;
+    font-family: 'Chonburi', cursive;
+}
+
+.card p {
+    color: white;
+    font-family: 'Kaisei Decol', serif;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    transform: translateZ(20px)
+}
+
+.card {
+    transform-style: preserve-3d
+}
+
+
+/* Main CSS */
+
+.grid-wrapper>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+p:hover {
+    text-decoration: none !important;
+}
+
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.my-form h1 {
+    margin-bottom: 1.5rem;
+}
+
+.my-form li,
+.my-form .grid>*:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+    width: 100%;
+    line-height: 1.5;
+    padding: 15px 10px;
+    border: 1px solid var(--borderFormEls);
+    color: var(--white);
+    background: var(--bgFormEls);
+    transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+    height: 170px;
+}
+
+.my-form ::placeholder {
+    color: inherit;
+    /*Fix opacity issue on Firefox*/
+    opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus+label {
+    background: var(--bgFormElsFocus);
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+    transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+    background-size: 15px 15px;
+}
+
+.my-form *:required {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+}
+
+.my-form select {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+}
+
+.my-form *:disabled {
+    cursor: default;
+    filter: blur(2px);
+}
+
+
+/* FORM BTNS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.my-form .required-msg {
+    display: none;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left / 15px 15px;
+    padding-left: 20px;
+}
+
+.my-form .btn-grid {
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.2s;
+}
+
+.my-form button {
+    font-weight: bold;
+}
+
+.my-form button>* {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.my-form button .back {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+}
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+    transform: translate(-50%, -50%);
+}
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+    transform: translateX(110%);
+}
+
+
+/* CUSTOM CHECKBOX
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.my-form input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.my-form input[type="checkbox"]+label {
+    position: relative;
+    display: inline-block;
+    padding-left: 2rem;
+    transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form input[type="checkbox"]+label::before,
+.my-form input[type="checkbox"]+label::after {
+    content: '';
+    position: absolute;
+}
+
+.my-form input[type="checkbox"]+label::before {
+    left: 0;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--white);
+}
+
+.my-form input[type="checkbox"]:checked+label::before {
+    background: var(--red);
+}
+
+.my-form input[type="checkbox"]:checked+label::after {
+    left: 7px;
+    top: 7px;
+    width: 6px;
+    height: 14px;
+    border-bottom: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+    transform: rotate(45deg);
+}
+
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    filter: blur(4px);
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: clamp(1rem, 5vw, 5rem);
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background-color: #e3fdf5;
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.active {
+    flex: 10;
+    filter: blur(0px);
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media screen and (max-width: 50rem) {
+    .slide h3 {
+        left: 5px;
+    }
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
